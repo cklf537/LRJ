@@ -1,0 +1,36 @@
+.lrj-logo{
+    /* font-family: 'Roboto Slab', serif; */
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    color: #993399;
+}
+
+.ljr-sublogo{
+    /* font-family: 'Open Sans', sans-serif; */
+    font-family: 'Roboto Slab', serif;
+    font-weight: 100;
+    color: #993399;
+    padding-top:1.0rem
+}
+
+.list-item{
+    /* display: inline-block !important; */
+    padding-top: 0.5rem;
+}
+
+.material-icons.nav-default{
+    color: #cccccc;
+}
+
+.material-icons.nav-default:hover{
+    color: #993399;
+}
+.material-icons.nav-default:visited{
+    color: #993399;
+}
+.material-icons.nav-default:active{
+    color: #993399;
+}
+.material-icons.nav-default:focus{
+    color: #993399;
+}
