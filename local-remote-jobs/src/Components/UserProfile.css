@@ -23,3 +23,8 @@
     font-size: 2.5rem;
     color: #993399;
 }
+
+ .btn-primary.search-primary{
+    background-color: #993399 !important;
+    border-color: #993399 !important;
+}

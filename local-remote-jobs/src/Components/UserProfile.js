@@ -8,7 +8,7 @@ class UserProfile extends Component{
             <React.Fragment>
             <Row className='pb-2 pt-2'>
                 <Col className='text-center '>
-                    <h2 className='banner-text'>Find your remote job now.</h2>
+                    <h2 className='banner-text'>Find your local remote job now.</h2>
                 </Col>
             </Row>
             <Row className='pb-2 pt-2'>
@@ -16,12 +16,12 @@ class UserProfile extends Component{
                 <Col>
                 <InputGroup className="mb-3 " >
                             <FormControl
-                            placeholder="Recipient's username"
-                            aria-label="Recipient's username"
+                            placeholder="search..."
+                            aria-label="search..."
                             aria-describedby="basic-addon2"
                             />
                             <InputGroup.Append>
-                            <Button variant="outline-secondary">Button</Button>
+                            <Button variant="primary search-primary">Search</Button>
                             </InputGroup.Append>
                         </InputGroup>
                 </Col>
