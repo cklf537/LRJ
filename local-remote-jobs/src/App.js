@@ -27,38 +27,28 @@ class App extends Component {
           </Col>
           <Col className='ljr-header-outer'></Col>
         </Row>
-        <Row>
+        <Row className="lrj-content-inner">
         <Col className='border'></Col>
-          <Col sm={6} lg={10} md={12} xl={10} xs={12}>
+          <Col sm={6} lg={10} md={12} xl={10} xs={12} >
             <Row>
-              <Col lg={2} md={2} sm={2} xs={2} className="d-none d-xl-block d-md-block d-sm-block d-xs-block border" >
+              <Col lg={1} md={1} sm={1} xs={1} className="d-none d-xl-block d-md-block d-sm-block d-xs-block border pt-3" >
                 <LeftNavigation ldate={this.state.leftNavigation} />
               </Col>
-              <Col xs={12} sm={12} md={10} lg={10} xl={10} className="border">
+              <Col xs={12} sm={12} md={11} lg={11} xl={11} className="border pt-3">
                 <MainContent />
               </Col>
             </Row>
           </Col>
           <Col className='border'></Col>
         </Row>
-        <Row>
-        <Col className='border'></Col>
+        <Row >
+        <Col ></Col>
           <Col sm={6} lg={10} md={12} xl={10} xs={12}>
             <Footer fdate={this.state.footer} />
           </Col>
-          <Col className='border'></Col>
+          <Col className=''></Col>
         </Row>
-        {/* <Row className='pt-3 border-bottom'>
-          <Col xs={1} className='logo-outer '>
-            <Header hobject={this.state.header}  />
-          </Col>
-          <Col className='list-item '> <RightHeader RNavigationData={this.state.header.right} /> </Col>
-        </Row>
-        <Row className=''>
-          <Col className=' p-2'>
-            <UserProfile />
-          </Col>
-        </Row>   */}
+        
       </Container>
     );
   }

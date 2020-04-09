@@ -2,7 +2,7 @@ import React from "react";
 
 const LeftNavigation = (props)=>{
     return (
-        <p>Left Navigation</p>
+        <p>Left Nav</p>
     );
 }
 
