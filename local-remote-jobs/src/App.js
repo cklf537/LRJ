@@ -28,22 +28,22 @@ class App extends Component {
           <Col className='ljr-header-outer'></Col>
         </Row>
         <Row className="lrj-content-inner">
-        <Col className='border'></Col>
+        <Col className=''></Col>
           <Col sm={6} lg={10} md={12} xl={10} xs={12} >
             <Row>
-              <Col lg={1} md={1} sm={1} xs={1} className="d-none d-xl-block d-md-block d-sm-block d-xs-block border pt-3" >
+              <Col lg={1} md={1} sm={1} xs={1} className="d-none d-xl-block d-md-block d-sm-block d-xs-block  pt-3" >
                 <LeftNavigation ldate={this.state.leftNavigation} />
               </Col>
-              <Col xs={12} sm={12} md={11} lg={11} xl={11} className="border pt-3">
+              <Col xs={12} sm={12} md={11} lg={11} xl={11} className=" pt-3">
                 <MainContent />
               </Col>
             </Row>
           </Col>
-          <Col className='border'></Col>
+          <Col className=''></Col>
         </Row>
-        <Row >
-        <Col ></Col>
-          <Col sm={6} lg={10} md={12} xl={10} xs={12}>
+        <Row className='border-top'>
+        <Col></Col>
+          <Col sm={6} lg={10} md={12} xl={10} xs={12} className="">
             <Footer fdate={this.state.footer} />
           </Col>
           <Col className=''></Col>
