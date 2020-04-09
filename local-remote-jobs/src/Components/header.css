@@ -1,0 +1,25 @@
+
+.lrj-header-bg{
+    background-color: #993399;
+    color: #ffffff !important;
+}
+.ljr-header-outer{
+    background-color: #993399;
+}
+.lrj-logo{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    color: #ffffff !important;
+}
+
+@media only screen and (min-width: 992px) {
+    .navbar-expand-lg{
+      padding-left: 5rem !important;
+    }
+  }
+
+  /* @media only screen and (min-width: 768px){
+    .navbar-expand-lg{
+        padding-left: 5rem !important;
+      } 
+  } */

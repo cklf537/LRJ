@@ -1,6 +1,6 @@
 let data = {
   header:{
-    left:{
+    Landing:{
       logo: 'LRJ.',
       loboSubTitile:'Local Remote Jobs'
     },
@@ -32,6 +32,10 @@ let data = {
       Completed: 7
     },
     portfolio:{}
+  },
+  footer:{
+    year: 2020,
+    licence: 'Copyright'
   }
 }
 
