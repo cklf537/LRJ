@@ -39,7 +39,7 @@ class App extends Component {
               </Col>
             </Row>
           </Col>
-          <Col className=''></Col>
+          <Col className='testclass1234'></Col>
         </Row>
         <Row className='border-top'>
         <Col></Col>
