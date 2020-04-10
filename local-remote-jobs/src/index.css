@@ -6,5 +6,35 @@
   /* font-family: 'Roboto Slab', serif; */
   font-weight: 200;
   font-family: 'Open Sans', sans-serif;
-  
+  color: #424242;
 }
+h1,h2,h3,h4,h5,h6{
+  color:#011627 !important;
+}
+
+.card-body > h1,h2,h3,h4,h5,h6{
+  color:#011627 !important;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #2EC4B6 !important;
+  border-color: #2EC4B6 !important;
+}
+
+.btn-primary:hover {
+  color: #fff;
+  background-color: #27aea1 !important;
+  border-color: #27aea1 !important;
+}
+
+#27aea1
+
+.card-title{
+  color: #011627 !important;
+}
+
+.card-text{
+  color: #424242 !important;
+}
+
