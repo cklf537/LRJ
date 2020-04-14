@@ -4,15 +4,16 @@
 // import { UserProfile } from './Components/archive/UserProfile'; 
 
 import React, { Component } from 'react';
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { BrowserRouter, Route, Switch} from "react-router-dom";
 import {Container, Row, Col } from 'react-bootstrap';
 import { data } from './data/app-data';
 import Header from "./Components/header";
 import Footer from "./Components/footer";
-import Dashboard from "./Components/dashboard";
+// import Dashboard from "./Components/dashboard";
 import Register from "./Components/register";
 import Landing from "./Components/landing";
 import Login from "./Components/login";
+import dashboard from "./Components/Dashboard/dashboard";
 import './app.css';
  
 
@@ -37,16 +38,11 @@ class App extends Component {
             <Row>
               <Switch>
                 <Route exact path='/' component={Landing} />
-                <Route path='/dashboard' component={Dashboard} />
+                {/* <Route path='/dashboard' component={Dashboard} /> */}
                 <Route path='/register' component={Register} />
                 <Route path='/login' component={Login} />
+                <Route path='/dashboard' component={dashboard} />
             </Switch>
-              {/* <Col lg={1} md={1} sm={1} xs={1} className="d-none d-xl-block d-md-block d-sm-block d-xs-block  pt-3" >
-                <LeftNavigation ldate={this.state.leftNavigation} />
-              </Col>
-              <Col xs={12} sm={12} md={11} lg={11} xl={11} className=" pt-3">
-                <MainContent />
-              </Col> */}
             </Row>
           </Col>
           <Col className='testClass'></Col>
@@ -61,7 +57,7 @@ class App extends Component {
         </BrowserRouter>
       </Container>
     );
-  }
+  } 
 }
 
 export default App;
