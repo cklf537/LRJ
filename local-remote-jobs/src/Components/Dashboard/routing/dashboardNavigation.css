@@ -1,0 +1,9 @@
+.nav-arrow-reverse{
+    transform: scaleX(-1);
+    color:#2EC4B6;
+    margin-left: -2px;
+}
+.nav-border-color{
+    border-right: solid 1px ;
+    border-color: #2EC4B6 !important ;
+}

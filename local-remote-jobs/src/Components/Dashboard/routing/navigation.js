@@ -1,15 +1,26 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, } from "react-router-dom";
+import { Navbar, Nav, Col, Row } from "react-bootstrap";
+import './dashboardNavigation.css';
 
-const Navigation = () => {
+const Navigation = (props) => {
+    const { nav } = props.nav;
+    const navlis = nav.map((navItem, index) => {
+        return (
+            <div key={index} className='pb-2 pt-2  '>
+                <Link to={`/dashboard/${navItem.path}`} >
+                    <Row className="p-0 m-0">
+                    <Col xs={11} className=" p-0 m-0"><span className="material-icons">{navItem.icon}</span><span> {navItem.title} </span> </Col>
+                    <Col xs={1} className=" p-0 m-0"><span class="material-icons nav-arrow-reverse">play_arrow</span></Col>
+                    </Row>
+                </Link>
+            </div>
+        )
+    })
     return (
-        <nav>
-            <ul>
-                <li><Link to='/dashboard/projects'>Projects</Link></li>
-                <li><Link to='/dashboard/contact'>Contact Us</Link></li>
-                <li><Link to='/dashboard/About'>About</Link></li>
-            </ul>
-        </nav>
+        <Nav defaultActiveKey="/home" className="flex-column ">
+            {navlis}
+        </Nav>
     );
 }
 

@@ -6,7 +6,7 @@ class Post extends Component {
     }
 
     componentDidMount() {
-        let id = this.props.match.params.post_id;
+        let id = this.props.match.params.id;
         this.setState({
             id
         })
