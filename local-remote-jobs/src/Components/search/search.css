@@ -1,0 +1,9 @@
+.search .btn-outline-secondary{
+    background-color: #e71d36 !important;
+    border-color: #e71d36 !important;
+    color:#fff !important;
+}
+
+.search, h6{
+    text-align: center;
+}

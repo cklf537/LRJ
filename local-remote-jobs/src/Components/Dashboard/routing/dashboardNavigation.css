@@ -17,10 +17,12 @@
 }
 
 .dashboard-nav{
-    color:#2EC4B6 !important;
+    /* color:#2EC4B6 !important; */
+    color:#011627 !important;
 }
 .dashboard-nav:hover{
-    color:#e71d36 !important;
+    /* color:#e71d36 !important; */
+    color:#2EC4B6 !important;
 }
 .nav-border-color a:hover{
     text-decoration: none;
