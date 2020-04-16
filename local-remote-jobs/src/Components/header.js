@@ -7,7 +7,7 @@ const Header = (props)=>{
     // console.log(props);
     let {logo} = props.hdata.Landing;
     return (
-        <Navbar expand="lg" className='lrj-header-bg' fixed="top" sm={6} lg={10} md={12} xl={10} xs={12} >
+        <Navbar expand="lg" className='lrj-header-bg pt-0 pb-0 mt-0 mb-0' fixed="top" sm={6} lg={10} md={12} xl={10} xs={12} >
         <NavLink to="/"><h1 className="lrj-logo">{logo}</h1></NavLink>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">

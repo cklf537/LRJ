@@ -4,6 +4,25 @@
     margin-left: -2px;
 }
 .nav-border-color{
-    border-right: solid 1px ;
+    /* border-right: solid 1px ; */
     border-color: #2EC4B6 !important ;
+    /* -webkit-box-shadow: 2px 0px 7px -5px #888 ; */
+    -webkit-box-shadow: 4px 0px 5px -5px #888;
+    background-color: #fff;
+}
+.nav-text{
+    position: relative;
+    bottom: 5px;
+    padding-left: 5px;
+}
+
+.dashboard-nav{
+    color:#2EC4B6 !important;
+}
+.dashboard-nav:hover{
+    color:#e71d36 !important;
+}
+.nav-border-color a:hover{
+    text-decoration: none;
+   
 }

@@ -13,7 +13,7 @@ import Footer from "./Components/footer";
 import Register from "./Components/register";
 import Landing from "./Components/landing";
 import Login from "./Components/login";
-import dashboard from "./Components/Dashboard/dashboard";
+import dashBoard from "./Components/Dashboard/dashboard";
 import './app.css';
  
 
@@ -34,14 +34,13 @@ class App extends Component {
         </Row>
         <Row className="lrj-content-inner">
           <Col className=''></Col>
-          <Col sm={6} lg={10} md={12} xl={10} xs={12} >
+          <Col sm={6} lg={10} md={12} xl={10} xs={12} className="" >
             <Row>
               <Switch>
                 <Route exact path='/' component={Landing} />
-                {/* <Route path='/dashboard' component={Dashboard} /> */}
                 <Route path='/register' component={Register} />
                 <Route path='/login' component={Login} />
-                <Route path='/dashboard' component={dashboard} />
+                <Route path='/dashboard' component={dashBoard} />
             </Switch>
             </Row>
           </Col>
