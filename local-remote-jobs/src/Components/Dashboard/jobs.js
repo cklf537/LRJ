@@ -11,7 +11,7 @@ class Jobs extends Component {
     }
 
     componentDidMount() {
-        axios.get('https://remoteok.io/api?ref=producthunt')
+        axios.get('https://remoteok.io/api?ref=producthunt')    
             .then(res => {
                 let tagsCollection = [];
                 res.data.map(item => {

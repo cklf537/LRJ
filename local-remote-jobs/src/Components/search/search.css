@@ -7,3 +7,39 @@
 .search, h6{
     text-align: center;
 }
+
+.search-tag-text{
+    display:inline-block;
+    padding: 2px 5px;
+    background-color: #ff9f1c;
+    font-weight: 500;
+     border-radius: 3px 0px 0px 3px;
+    
+}
+
+.search-tag-icon{
+    float: right;
+    height: 19px;
+    width: 20px;
+    position: relative;
+    top: 4px;
+    left: -10px;
+   
+    transform: rotate(45deg);
+    background-color: #ff9f1c;
+    z-index: -9999;
+   
+}
+
+.search-tag-icon .material-icons.md-48{
+    font-size: 3.1rem;
+}
+
+.search-tag-wrapper{
+    float:left;
+    margin: 5px 0px 0px 0px;
+  
+}
+.search .input-group{
+    /* width:75% !important; */
+}
