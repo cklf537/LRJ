@@ -12,7 +12,7 @@ import Footer from "./Components/footer";
 // import Dashboard from "./Components/dashboard";
 import Register from "./Components/register";
 import Landing from "./Components/landing";
-import Login from "./Components/login";
+import Login from "./Components/login/login";
 import dashBoard from "./Components/Dashboard/dashboard";
 import './app.css';
  
