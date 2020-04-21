@@ -1,4 +1,3 @@
-
 // import { Header } from './Components/archive/topHeader'
 // import { RightHeader } from './Components/archive/rightHeader';
 // import { UserProfile } from './Components/archive/UserProfile'; 
@@ -14,21 +13,20 @@ import Register from "./Components/register";
 import Landing from "./Components/landing";
 import Login from "./Components/login/login";
 import dashBoard from "./Components/Dashboard/dashboard";
+import { connect } from "react-redux";
 import './app.css';
  
 
 class App extends Component {
-  state = {
-    ...data
-  }
   render(){
+    const {header, footer } = this.props;
   return (
       <Container className='global-class' fluid >
         <BrowserRouter>
         <Row>
           <Col className='ljr-header-outer' ></Col>
           <Col sm={6} lg={10} md={12} xl={10} xs={12} className='pl-0 pr-0 ljr-headder-inner'>
-            <Header hdata={this.state.header} />
+            <Header hdata={header} />
           </Col>
           <Col className='ljr-header-outer'></Col>
         </Row>
@@ -49,7 +47,7 @@ class App extends Component {
         <Row className='border-top'>
         <Col></Col>
           <Col sm={6} lg={10} md={12} xl={10} xs={12} className="">
-            <Footer fdate={this.state.footer} />
+            <Footer fdate={footer} />
           </Col>
           <Col className=''></Col>
         </Row>
@@ -59,4 +57,15 @@ class App extends Component {
   } 
 }
 
-export default App;
+const mapStateToProps = (state)=>{
+  return({
+    ...state
+  })
+
+}
+
+const mapDispatchToProps = ()=>{
+  return;
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(App);

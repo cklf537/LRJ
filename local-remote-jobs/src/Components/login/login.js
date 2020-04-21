@@ -39,7 +39,7 @@ const Login = props => {
                         res.data.filter(item => {
                             if (item.email === email && item.username === pass) {
                                 props.history.push("/");
-                                return <Redirect to='/dashboard' />
+                                // return <Redirect to='/dashboard' />
                             } else {
                                 setErrorInfo({
                                     errorMsg: 'UserName and password invalid',
