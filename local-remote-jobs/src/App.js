@@ -1,25 +1,18 @@
-// import { Header } from './Components/archive/topHeader'
-// import { RightHeader } from './Components/archive/rightHeader';
-// import { UserProfile } from './Components/archive/UserProfile'; 
-
 import React, { Component } from 'react';
 import { BrowserRouter, Route, Switch} from "react-router-dom";
 import {Container, Row, Col } from 'react-bootstrap';
-import { data } from './data/app-data';
 import Header from "./Components/header";
 import Footer from "./Components/footer";
-// import Dashboard from "./Components/dashboard";
 import Register from "./Components/register";
 import Landing from "./Components/landing";
 import Login from "./Components/login/login";
 import dashBoard from "./Components/Dashboard/dashboard";
 import { connect } from "react-redux";
 import './app.css';
- 
 
 class App extends Component {
   render(){
-    const {header, footer } = this.props;
+    const {header, footer } = this.props.landing;
   return (
       <Container className='global-class' fluid >
         <BrowserRouter>
@@ -64,8 +57,4 @@ const mapStateToProps = (state)=>{
 
 }
 
-const mapDispatchToProps = ()=>{
-  return;
-}
-
-export default connect(mapStateToProps, mapDispatchToProps)(App);
+export default connect(mapStateToProps, null)(App);

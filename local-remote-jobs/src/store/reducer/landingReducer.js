@@ -1,10 +1,10 @@
 // import {  } from "react-redux";
 import { data } from "../app-data";
 
-const reducer = (state=data, action)=>{
+const landingReducer = (state=data, action)=>{
     return ({
         ...state
     })
 }
 
-export default reducer;
+export default landingReducer;
