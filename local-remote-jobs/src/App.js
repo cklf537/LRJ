@@ -26,15 +26,13 @@ class App extends Component {
       <Container className='global-class' fluid >
         <BrowserRouter>
         <Row>
-          <Col className='ljr-header-outer' ></Col>
-          <Col sm={6} lg={10} md={12} xl={10} xs={12} className='pl-0 pr-0 ljr-headder-inner'>
+          <Col sm={6} lg={12} md={12} xl={12} xs={12} className='pl-0 pr-0 ljr-headder-inner'>
             <Header hdata={this.state.header} />
           </Col>
           <Col className='ljr-header-outer'></Col>
         </Row>
         <Row className="lrj-content-inner">
-          <Col className=''></Col>
-          <Col sm={6} lg={10} md={12} xl={10} xs={12} className="" >
+          <Col sm={6} lg={12} md={12} xl={12} xs={12} className="" >
             <Row>
               <Switch>
                 <Route exact path='/' component={Landing} />
@@ -44,11 +42,10 @@ class App extends Component {
             </Switch>
             </Row>
           </Col>
-          <Col className='testClass'></Col>
         </Row>
         <Row className='border-top'>
         <Col></Col>
-          <Col sm={6} lg={10} md={12} xl={10} xs={12} className="">
+          <Col sm={6} lg={12} md={12} xl={12} xs={12} className="">
             <Footer fdate={this.state.footer} />
           </Col>
           <Col className=''></Col>

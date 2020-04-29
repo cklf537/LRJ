@@ -1,8 +1,73 @@
 .search-tag-line h2{
     font-family: 'Roboto Slab', serif !important;
     font-weight: 400 !important;
-    font-size: 2.5rem !important;
+    font-size: 2rem !important;
     text-align: center;
     margin-top: 1rem;
     margin-bottom: 0.5rem;;
+}
+.banner {
+    position: relative;
+    background: url(../data/img/bg.jpg) no-repeat center top;
+    height:300px;
+    color: #fff;
+}
+.banner h3 {
+    color: #fff !important;
+}
+.clear{
+    clear: both;
+}
+.banner p {
+    color: #fff;
+    padding: 2px 40px;
+    font-size: 18px;
+}
+#overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.5);
+    background: -webkit-radial-gradient(50% 55%, ellipse closest-corner, rgba(75, 101, 121, 0.42) 1%, rgba(0, 17, 39, 0.84) 100%);
+    background: -moz-radial-gradient(50% 55%, ellipse closest-corner, rgba(75, 101, 121, 0.42) 1%, rgba(0, 17, 39, 0.84) 100%);
+    background: -ms-radial-gradient(50% 55%, ellipse closest-corner, rgba(75, 101, 121, 0.42) 1%, rgba(0, 17, 39, 0.84) 100%);
+    background: radial-gradient(50% 55%, ellipse closest-corner, rgba(75, 101, 121, 0.42) 1%, rgba(0, 17, 39, 0.84) 100%);
+    filter: alpha(opacity=8);
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    z-index: 0;
+}
+.bannerBtn {
+    background-color: transparent !important;
+    padding: 10px 40px !important;
+    margin:5px;
+    border: 1px solid #fff !important;
+}
+.search-tag-line {
+    margin: 0 auto;
+}
+.content-bg {
+   background:  #f9f9f9;
+}
+.bgText {
+    text-align: center;
+    padding-top: 6%;
+}
+.bgImage img{
+    width: 100%;
+    height: auto;
+    max-height: 250px;
+}
+.bgImage {
+    text-align: center;
 }

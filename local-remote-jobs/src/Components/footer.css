@@ -14,3 +14,12 @@
 .lrj-footer-bg h4{
     font-weight: 800;
 }
+.list {
+    padding: 0;
+    float: right;
+    list-style-type: none;
+}
+.list li{
+    float: left;
+    margin-left: 20px;
+}
