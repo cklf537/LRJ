@@ -2,17 +2,15 @@ import React, { Component } from "react";
 import { Form, Button, Row, Col } from 'react-bootstrap'
 import { Link, NavLink } from "react-dom";
 import { connect } from "react-redux";
+import { postJobAction } from "../../store/Actions/postJobActions";
 
 class PostJobs extends Component {
     constructor(props) {
         super(props)
-        console.log("post Jobs", this.props);
     }
     state = {
-        jobListing:{
-            title: '',
-            description:''
-        }
+        title:'',
+        description:''
     }
     handelChange = (e)=>{
         this.setState({
@@ -21,10 +19,9 @@ class PostJobs extends Component {
     }
     handelSubmit = (e)=>{
         e.preventDefault();
-        console.log('state', this.state);
+        this.props.postJob(this.state);
     }
     render() {
-        const { jobListing } = this.state;
         return (
             <Col className="mt-3">
                 <h3 className="pb-2">Post Requirement</h3>
@@ -37,7 +34,8 @@ class PostJobs extends Component {
                         <Form.Label>Description</Form.Label>
                         <Form.Control as="textarea" rows="3" onChange={this.handelChange} />
                     </Form.Group>
-                    <Button variant="primary" type="submit">Post</Button>
+                    <Button variant="primary" type="submit">Post</Button> 
+                    {this.props.loading && "hello"}
                 </Form>
             </Col>
         );
@@ -46,8 +44,12 @@ class PostJobs extends Component {
 
 const mapdispatchToProps = (dispatch)=>{
     return{
-        postJob: (jobListing)=>{dispatch(postJobActionControler(jobListing))}
+        postJob: (jobPost)=>dispatch(postJobAction(jobPost))
     }
+} 
+
+const mapStateToProps = (state)=>{
+   return state;
 }
 
-export default connect()(PostJobs);
+export default connect(mapStateToProps, mapdispatchToProps)(PostJobs);

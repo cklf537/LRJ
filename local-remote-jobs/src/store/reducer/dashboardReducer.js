@@ -1,6 +1,6 @@
 import { data } from "../app-data";
 
-const dashbordReducer = (state = data, action)=>{
+const dashbordReducer = (state = {}, action)=>{
     return {...state};
 }
 

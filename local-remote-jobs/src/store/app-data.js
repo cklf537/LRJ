@@ -36,6 +36,9 @@ let data = {
   footer:{
     year: 2020,
     licence: 'Copyright'
+  },
+  jobs:{
+    loading: ''
   }
 }
 
