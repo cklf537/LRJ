@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { Col, Card, Row, Button } from "react-bootstrap";
 import Search from "../Components/search/search";
 import './landing.css';
+import { Link } from "react-router-dom";
+
 
 class Landing extends Component {
   render() {
