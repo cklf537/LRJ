@@ -9,6 +9,7 @@ import Login from "./Components/login/login";
 import dashBoard from "./Components/Dashboard/dashboard";
 import { connect } from "react-redux";
 import './app.css';
+import PostJobs from './Components/forms/postJobs';
 
 class App extends Component {
   render(){
@@ -32,6 +33,7 @@ class App extends Component {
                 <Route path='/register' component={Register} />
                 <Route path='/login' component={Login} />
                 <Route path='/dashboard' component={dashBoard} />
+                <Route path='/postjobs' component={PostJobs} />
             </Switch>
             </Row>
           </Col>

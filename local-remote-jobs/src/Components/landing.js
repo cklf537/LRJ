@@ -2,17 +2,21 @@ import React, { Component } from 'react';
 import { Col, Card, Row, Button } from "react-bootstrap";
 import Search from "../Components/search/search";
 import './landing.css';
+import { Link } from "react-router-dom";
+
 
 class Landing extends Component {
   render() {
     return (
       <Col className="pt-3">
-      <Row>
-        <Col className="search-tag-line"> 
-        <h2 >Search for your "Local Remote Job."</h2>
-        <Search />
-        </Col>
-      </Row>
+        <Row>
+          <Col className="search-tag-line" >
+          <h2 >Search for your "Local Remote Job."</h2>
+            <Search />
+            <Link to="/postjobs"> <Button>Post jobs for just 399 rs.</Button> </Link>
+          </Col>
+          
+        </Row>
         <Row>
           <Col><Card style={{ width: '15rem' }}>
             <Card.Img variant="top" />
@@ -59,7 +63,6 @@ class Landing extends Component {
             </Card.Body>
           </Card></Col>
         </Row>
-
       </Col>
     );
   }
