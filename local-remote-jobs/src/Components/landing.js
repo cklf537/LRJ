@@ -11,14 +11,14 @@ class Landing extends Component {
       <React.Fragment>
         <Col className="banner" sm={6} lg={12} md={12} xl={12} xs={12}>
           <Row >
-            <div id="overlay" class="darker"></div>
+            <div id="overlay" className="darker"></div>
             <Col sm={6} lg={10} md={12} xl={10} xs={12} style={{ margin: '0 auto', padding: '15px' }}>
               <Row>
                 <Col sm={12} lg={12} md={12} xl={12} xs={12}>
                   <div className="bgText">
                     <h3> LRJ for you to post a job or find a job </h3>
                     <p>LRJ helps millions of people find great jobs and love what they do every day. We curate the best digital jobs for those looking to start their telecommuting career.</p>
-                    <Button className="bannerBtn" >POST A JOB</Button>
+                    <Button className="bannerBtn" > <Link to="/postjob"> POST A JOB </Link></Button>
                     <Button  className="bannerBtn" >FIND A JOB</Button>
                   </div>
                 </Col>

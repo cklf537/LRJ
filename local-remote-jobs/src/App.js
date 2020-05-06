@@ -19,7 +19,7 @@ class App extends Component {
         <BrowserRouter>
         <Row>
           <Col sm={6} lg={12} md={12} xl={12} xs={12} className='pl-0 pr-0 ljr-headder-inner'>
-            <Header hdata={this.state.header} />
+            <Header hdata={header} />
           </Col>
           <Col className='ljr-header-outer'></Col>
         </Row>
@@ -31,7 +31,7 @@ class App extends Component {
                 <Route path='/register' component={Register} />
                 <Route path='/login' component={Login} />
                 <Route path='/dashboard' component={dashBoard} />
-                <Route path='/postjobs' component={PostJobs} />
+                <Route path='/postjob' component={PostJobs} />
             </Switch>
             </Row>
           </Col>
@@ -39,7 +39,7 @@ class App extends Component {
         <Row className='border-top'>
         <Col></Col>
           <Col sm={6} lg={12} md={12} xl={12} xs={12} className="">
-            <Footer fdate={this.state.footer} />
+            <Footer fdate={footer} />
           </Col>
           <Col className=''></Col>
         </Row>

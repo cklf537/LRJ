@@ -3,7 +3,8 @@ const ADD_JOB_SUCCESS = "ADD_JOB_SUCCESS";
 // const ADD_JOB_FAIL = "ADD_JOB_FAIL";
 
 const postJobStart = ()=>({
-    type: ADD_JOB_START
+    type: ADD_JOB_START,
+    payload: true
 })
 const postJobSuccess = job=>({
     type: ADD_JOB_SUCCESS,

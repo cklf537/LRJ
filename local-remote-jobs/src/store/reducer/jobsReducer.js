@@ -1,16 +1,17 @@
 // import { data } from "../app-data";
 
-const jobReducer = (state = {}, action) => {
+import Jobs from "../../Components/Dashboard/jobs";
+const initState = [];
+
+const jobReducer = (state = initState, action) => {
     switch (action.type) {
         case "ADD_JOB_SUCCESS":
-            const job = { ...action.payload };
-            return {
-                ...state,
-                job
-            }
+            initState.push(action.payload);
+            return initState;
             break;
         case "ADD_JOB_START":
-            return {...state};
+            let initialLoad = false
+            return { ...state };
             break;
         default:
             return { ...state }

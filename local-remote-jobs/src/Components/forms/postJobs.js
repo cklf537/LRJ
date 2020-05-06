@@ -3,6 +3,7 @@ import { Form, Button, Row, Col } from 'react-bootstrap'
 import { Link, NavLink } from "react-dom";
 import { connect } from "react-redux";
 import { postJobAction } from "../../store/Actions/postJobActions";
+import  JobForm  from "./jobform";
 
 class PostJobs extends Component {
     constructor(props) {
@@ -13,6 +14,7 @@ class PostJobs extends Component {
         description:''
     }
     handelChange = (e)=>{
+        // console.log("handelChange" , e.target.value);
         this.setState({
             [e.target.id] : e.target.value
         })
@@ -21,23 +23,25 @@ class PostJobs extends Component {
         e.preventDefault();
         this.props.postJob(this.state);
     }
+
     render() {
         return (
-            <Col className="mt-3">
-                <h3 className="pb-2">Post Requirement</h3>
-                <Form onSubmit={this.handelSubmit}>
-                    <Form.Group controlId="title">
-                        <Form.Label>Title</Form.Label>
-                        <Form.Control type="text" placeholder="Job Title" onChange={this.handelChange} />
-                    </Form.Group>
-                    <Form.Group controlId="description">
-                        <Form.Label>Description</Form.Label>
-                        <Form.Control as="textarea" rows="3" onChange={this.handelChange} />
-                    </Form.Group>
-                    <Button variant="primary" type="submit">Post</Button> 
-                    {this.props.loading && "hello"}
-                </Form>
-            </Col>
+            // <Col className="mt-3">
+            //     <h3 className="pb-2">Post Requirement</h3>
+            //     <Form onSubmit={this.handelSubmit}>
+            //         <Form.Group controlId="title">
+            //             <Form.Label>Title</Form.Label>
+            //             <Form.Control type="text" placeholder="Job Title" onChange={this.handelChange} />
+            //         </Form.Group>
+            //         <Form.Group controlId="description">
+            //             <Form.Label>Description</Form.Label>
+            //             <Form.Control as="textarea" rows="3" onChange={this.handelChange} />
+            //         </Form.Group>
+            //         <Button variant="primary" type="submit">Post</Button> 
+            //         {this.props.loading && "hello"}
+            //     </Form>
+            // </Col>
+            <JobForm handelChange={this.handelChange} handelSubmit={this.handelSubmit} />
         );
     }
 }
