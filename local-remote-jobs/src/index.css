@@ -38,6 +38,10 @@ h3{
   background-color: #27aea1 !important;
   border-color: #27aea1 !important;
 }
+.MuiButton-containedPrimary {
+  color: #fff;
+  background-color: #2EC4B6 !important;
+}
 
 #27aea1
 

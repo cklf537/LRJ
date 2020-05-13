@@ -3,12 +3,14 @@ import { Col, Card, Row, Button } from "react-bootstrap";
 import Search from "../Components/search/search";
 import './landing.css';
 import { Link } from "react-router-dom";
+import LandingPage from "../Components/landing/landing";
 
 
 class Landing extends Component {
   render() {
     return (
       <React.Fragment>
+        {/* <LandingPage /> */}
         <Col className="banner" sm={6} lg={12} md={12} xl={12} xs={12}>
           <Row >
             <div id="overlay" className="darker"></div>

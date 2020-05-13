@@ -1,20 +1,34 @@
 import React, { Component } from 'react'
-import { Paper, Container, TextField, Button, Radio, FormLabel, FormControlLabel, RadioGroup, FormControl, Grid, Typography } from '@material-ui/core';
+import { 
+  Paper, 
+  Container, 
+  TextField, 
+  Button, 
+  Radio, 
+  FormLabel, 
+  FormControlLabel, 
+  RadioGroup, 
+  FormControl, 
+  Grid, 
+  Typography,
+  CircularProgress
+} from '@material-ui/core';
 import useStyles from "./poststyle";
 
-const JobForm = ({ handelChange, handelSubmit }) => {
+const JobForm = ({ handelChange, handelSubmit, args }) => {
   const classes = useStyles();
+  const postres = args.loading && args.loading ?  <CircularProgress /> : null;
   return (
     <Container className={classes.root} maxWidth="xl">
       <Paper>
 
         <form onSubmit={handelSubmit} className={classes.root} noValidate autoComplete="off" onSubmit={handelSubmit}  >
-          <div ><Typography variant="h4" gutterBottom className={classes.heading}>
-            You post your requirement... we find the resource....
+          <Typography variant="h4" gutterBottom >
+            <div className={classes.heading}> Please fill in requirement details. </div>
           </Typography>
-          </div>
-          <TextField id="position" label="Job Title*" placeholder="Job Title/Position" fullWidth margin="normal" onChange={handelChange} />
-          <Grid item xs={12} sm={6} border>
+          
+          <TextField id="title" label="Job Title*" placeholder="Job Title/Position" fullWidth margin="normal" onChange={handelChange} />
+          <Grid item xs={12} sm={6} >
             <TextField id="company" label="Company Name*" placeholder="Company name" fullWidth margin="normal" onChange={handelChange} />
           </Grid>
           <Grid item xs={12} sm={6}>
@@ -34,24 +48,21 @@ const JobForm = ({ handelChange, handelSubmit }) => {
           <div className={classes.radio}>
             <FormControl component="fieldset">
               <FormLabel component="legend">Position Type</FormLabel>
-              <RadioGroup row aria-label="position" name="position" id="position" defaultValue="top">
+              <RadioGroup row aria-label="position" name="position" id="position" onChange={handelChange} defaultValue="top">
                 <FormControlLabel
                   value="100PercentRemote"
                   control={<Radio color="primary" />}
                   label="100% Remote"
-                  onChange={handelChange}
                 />
                 <FormControlLabel
                   value="Contract"
                   control={<Radio color="primary" />}
                   label="Contract"
-                  onChange={handelChange}
                 />
                 <FormControlLabel
                   value="Freelance"
                   control={<Radio color="primary" />}
                   label="Freelance"
-                  onChange={handelChange}
                 />
               </RadioGroup>
             </FormControl>
@@ -62,6 +73,8 @@ const JobForm = ({ handelChange, handelSubmit }) => {
           <Button variant="contained" color="primary" type="submit">
             Post job
         </Button>
+        {postres}
+        {args.error && args.error !== undefined ? <div>{args.error.message}</div> : null}
         </form>
       </Paper>
     </Container>

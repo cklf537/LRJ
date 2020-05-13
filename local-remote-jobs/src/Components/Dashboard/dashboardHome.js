@@ -12,7 +12,7 @@ class DashboardHome extends Component {
         axios.get('https://remoteok.io/api?ref=producthunt')
             .then(res => {
                 res.data.map(item => {
-                    return item.tags != undefined ? availableTags.push(item.tags) : null;
+                    return item.tags !== undefined ? availableTags.push(item.tags) : null;
                 })
                 this.setState({
                     tags: availableTags

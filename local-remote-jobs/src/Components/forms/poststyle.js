@@ -16,7 +16,7 @@ const useStyles = makeStyles((theme) => ({
         width:'50%'
       },
       heading:{
-        color:red[500]
+        color:'#e71d36'
       }
 }));
 

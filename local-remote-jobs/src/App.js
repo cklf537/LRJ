@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Route, Switch} from "react-router-dom";
 import {Container, Row, Col } from 'react-bootstrap';
-import Header from "./Components/header";
+// import Header from "./Components/header";
 import Footer from "./Components/footer";
 import Register from "./Components/register";
 import Landing from "./Components/landing";
@@ -10,11 +10,16 @@ import dashBoard from "./Components/Dashboard/dashboard";
 import { connect } from "react-redux";
 import './app.css';
 import PostJobs from './Components/forms/postJobs';
+// import Container from '@material-ui/core/Container';
+import Header from './Components/header/header'
 
 class App extends Component {
   render(){
     const {header, footer } = this.props.landing;
   return (
+    // <Container maxWidth="xl">
+    //   <Header />
+    // </Container>
       <Container className='global-class' fluid >
         <BrowserRouter>
         <Row>
