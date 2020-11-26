@@ -6,7 +6,7 @@ const theme = createMuiTheme({
     palette:{
         primary:{
             light: '#6ff7e8',
-            main: '#2ec4b6',
+            main: '#FFFFFF',
             dark: '#009386',
             contrastText: '#1c1c1c',
         },
@@ -19,7 +19,7 @@ const theme = createMuiTheme({
     },
     typography:{
         body1:{
-            fontFamily:font
+            color: "#1D3557"
         }
     }
 })
