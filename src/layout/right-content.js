@@ -1,7 +1,11 @@
+import Paper from '@material-ui/core/Paper';
+
 const RightContent = ()=>{
     return(
         <div>
-            Right Content
+            <Paper>
+                Right Content
+            </Paper>
         </div>
     )
 }

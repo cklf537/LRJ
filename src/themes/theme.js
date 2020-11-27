@@ -20,8 +20,15 @@ const theme = createMuiTheme({
     typography:{
         body1:{
             color: "#1D3557"
-        }
+        },
     }
 })
+
+// theme.typography.h4 = {
+//     [theme.breakpoints.up('sm')]: {
+//         fontSize: '2.2rem',
+//     }
+//   }
+  
 
 export default theme;
