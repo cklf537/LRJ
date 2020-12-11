@@ -12,6 +12,14 @@ import SearchBar from "./searh-bar";
 const useStyles = makeStyles((theme)=>({
     root:{
         flexGrow: 1,
+    },
+    mainLayout:{
+        marginRight:"1rem",
+        marginLeft:"1rem",
+        [theme.breakpoints.up('sm')]:{
+            marginRight: "2rem",
+            marginLeft: "2rem",
+        }
     }
 }));
 
@@ -21,13 +29,13 @@ const Layout = () => {
     const classes = useStyles()
 
     return (
-        <div>
+        <div className={classes.mainLayout}>
         <Grid container className={classes.root} spacing={2}>
-            <Grid item xs={12}>
+            <Grid item xs={12} >
                 <Header />
                 <SearchBar />
             </Grid>
-            <Hidden mdUp>
+            <Hidden smDown>
             <Grid item xs={2}>
                 <LeftContent />
             </Grid>
@@ -38,8 +46,8 @@ const Layout = () => {
                 <RightContent />
             </Grid>
             </Hidden>
-            <Hidden>
-            <Grid item xs={12} smDown>
+            <Hidden smUp> 
+            <Grid item xs={12} >
                 <MiddleContent />
             </Grid>
             </Hidden>

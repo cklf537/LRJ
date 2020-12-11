@@ -16,6 +16,7 @@ const theme = createMuiTheme();
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
+    marginTop: "1rem",
   },
   menuButton: {
     marginRight: theme.spacing(0),
@@ -60,7 +61,7 @@ const Header = () => {
                 </IconButton>
               </Hidden>
               <Typography variant="h1" className={classes.title} color="white">
-                Devcircle
+                DFC
             <Typography variant="h2" className={classes.subTitle}>
                   Your tech talk circle.
             </Typography>
@@ -68,7 +69,7 @@ const Header = () => {
              
               <IconButton aria-label="display more actions" edge="end" color="inherit">
                 {/* <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" className={classes.large} smUp /> */}
-                <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" className={classes.small} smDown />
+                {/* <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" className={classes.small} smDown /> */}
               </IconButton>
             </Toolbar>
           </AppBar>

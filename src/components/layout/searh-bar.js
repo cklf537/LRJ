@@ -6,10 +6,11 @@ import { IconButton, makeStyles, Paper } from '@material-ui/core';
 const useStyle = makeStyles((theme)=>({
     root:{
         display: 'flex',
+        marginRight: theme.spacing(0),
     },
     input:{
         marginLeft: theme.spacing(6),
-        marginLeft: theme.spacing(6),
+        
         flex: 1,
     },
     iconButton:{
@@ -23,7 +24,7 @@ const SearchBar = () => {
     const classes = useStyle();
 
     return (
-        <Paper className={classes.root}>
+        <Paper className={classes.root} elevation={1} square>
             <InputBase
                 className={classes.input}
                 placeholder="Search..."
